@@ -50,5 +50,5 @@ L’interface graphique est construite avec **Tkinter** et divisée en 4 onglets
 1. Clonez le dépôt :
 
 ```bash
-git clone https://github.com/votre-utilisateur/nom-du-repo.git
-cd nom-du-repo
+[git clone https://github.com/Esprit23/appEven.git]
+cd appEven
