@@ -1,77 +1,54 @@
-Plateforme de Gestion des Événements Universitaires
-Description du Projet
-Ce projet implémente une plateforme de gestion des événements universitaires en utilisant Python et Tkinter pour l'interface graphique. L'objectif principal est de démontrer l'application de plusieurs design patterns pour construire une architecture logicielle robuste, flexible et maintenable, capable de gérer la création d'événements, l'inscription des participants, la visualisation des informations et la communication des mises à jour.
+# 🎓 Plateforme de Gestion des Événements Universitaires
 
-Fonctionnalités
-La plateforme offre les fonctionnalités suivantes :
+Ce projet est une **application de bureau Python (Tkinter)** permettant de gérer des événements universitaires. Elle met en œuvre plusieurs **design patterns** pour garantir une architecture solide, flexible et facilement maintenable.
 
-Création d'événements variés : Permet de créer différents types d'événements (Conférences, Hackathons, Séminaires) avec des attributs spécifiques.
+---
 
-Gestion des inscriptions : Facilite l'inscription des participants aux événements, avec des règles de validation dynamiques.
+## 🚀 Fonctionnalités Principales
 
-Système de notification : Envoie des notifications automatiques aux participants et organisateurs en cas de mises à jour ou de changements de statut d'inscription.
+- **Création d’événements variés** : conférences, hackathons, séminaires, avec attributs spécifiques.
+- **Gestion des inscriptions** : système dynamique de validation selon des règles définies.
+- **Système de notifications** : envoi automatique de notifications aux participants/organisateurs.
+- **Affichage multi-plateforme** : visualisation simple ou détaillée, adaptable à différents supports (web/mobile).
+- **Contrôle d’accès sécurisé** : affichage conditionnel des détails sensibles selon le rôle ou le statut d’inscription.
 
-Visualisation flexible des événements : Affiche les informations des événements de différentes manières (simple, détaillée) et s'adapte à diverses plateformes (web, mobile).
+---
 
-Sécurisation des accès : Contrôle l'accès aux détails sensibles des événements en fonction du rôle de l'utilisateur ou de son statut d'inscription.
+## 🧠 Design Patterns Utilisés
 
-Design Patterns Utilisés
-Ce projet met en œuvre les design patterns suivants pour adresser les besoins du système :
+| Pattern              | Catégorie       | Utilisation |
+|----------------------|------------------|-------------|
+| Factory Method        | Création         | Création flexible d’événements selon leur type. |
+| Bridge                | Structurel       | Découplage de l'affichage de l’événement de son implémentation. |
+| Proxy                 | Structurel       | Contrôle d’accès aux détails sensibles des événements. |
+| Observer              | Comportemental   | Notifications automatiques des changements d’état. |
+| Strategy              | Comportemental   | Règles de validation d’inscription interchangeables. |
+| Template Method       | Comportemental   | Définition d’un processus d’inscription standardisé. |
 
-Factory Method (Création) : Pour la création flexible et découplée des différents types d'événements.
+---
 
-Bridge (Structurel) : Pour découpler l'abstraction de l'affichage des événements de son implémentation sur diverses plateformes.
+## 💻 Interface Utilisateur
 
-Proxy (Structurel) : Pour contrôler et sécuriser l'accès aux détails des événements.
+L’interface graphique est construite avec **Tkinter** et divisée en 4 onglets :
 
-Observer (Comportemental) : Pour la gestion des notifications automatiques lors des changements d'état des événements ou des inscriptions.
+1. **Créer Événement** : saisie des informations de l’événement.
+2. **Gérer Inscriptions** : ajout de participants et validation des inscriptions.
+3. **Voir Événements** : consultation des événements sous différents formats.
+4. **Proxy & Notifications** : test d’accès sécurisé et affichage des notifications en temps réel.
 
-Strategy (Comportemental) : Pour encapsuler et rendre interchangeables les différentes règles de validation d'inscription.
+---
 
-Template Method (Comportemental) : Pour définir le squelette d'un processus d'inscription standardisé tout en permettant la personnalisation de certaines étapes.
+## 🛠️ Pré-requis
 
-Comment Exécuter l'Application
-Prérequis
-Python 3.x installé.
+- **Python 3.x** installé sur votre machine.
+- Aucun module externe requis.
 
-Étapes
-Téléchargez le code :
-Clonez ce dépôt ou téléchargez les fichiers du projet. Assurez-vous d'avoir le fichier event_app.py (ou le nom de votre fichier principal).
+---
 
-Naviguez vers le répertoire du projet :
-Ouvrez votre terminal ou invite de commande et accédez au dossier où se trouve le fichier event_app.py.
+## ▶️ Lancer l’Application
 
-cd chemin/vers/votre/dossier/projet
+1. Clonez le dépôt :
 
-Exécutez l'application :
-Lancez l'application en exécutant le script Python.
-
-python event_app.py
-
-Utilisation de l'Application
-L'application s'ouvrira avec une interface graphique Tkinter divisée en plusieurs onglets :
-
-Créer Événement : Permet aux organisateurs de définir de nouveaux événements en spécifiant leur nom, description, date, type et les attributs spécifiques à chaque type (places, speaker, sponsor, durée, domaine).
-
-Gérer Inscriptions : Permet de créer des participants, de les inscrire à des événements et de valider leurs inscriptions selon des règles spécifiques.
-
-Voir Événements : Permet de consulter les détails des événements avec différentes options d'affichage (simple/détaillé) et de plateforme (web/mobile).
-
-Proxy & Notifications : Permet de simuler la connexion d'utilisateurs, de tester l'accès sécurisé aux détails des événements via le Proxy, et d'observer le journal des notifications en temps réel.
-
-Dépendances
-Ce projet utilise les modules standards de Python :
-
-tkinter (pour l'interface graphique)
-
-tkinter.ttk (pour les widgets thématiques modernes)
-
-tkinter.messagebox (pour les boîtes de dialogue)
-
-tkinter.scrolledtext (pour les zones de texte défilantes)
-
-abc (pour les classes abstraites)
-
-datetime (pour la gestion des dates)
-
-Aucune installation supplémentaire de bibliothèques externes n'est requise.
+```bash
+git clone https://github.com/votre-utilisateur/nom-du-repo.git
+cd nom-du-repo
